@@ -1,0 +1,26 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      sampleDict;
+}
+setFormat   raw;
+interpolationScheme cellPoint;
+fields
+(
+    U
+    p
+);
+sets
+(
+    lineX
+    {
+        type    uniform;
+        axis    x;
+        start   (-10 0 0);
+        end     (30 0 0);
+        nPoints 100;
+    }
+);
+

@@ -1,0 +1,4 @@
+
+paraview:38426 terminated with signal 11 at PC=0 SP=7ffc618509f8.  Backtrace:
+/usr/lib/x86_64-linux-gnu/libinfinipath.so.4(+0x421e)[0x767d6a56c21e]
+/usr/lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x767d94645330]

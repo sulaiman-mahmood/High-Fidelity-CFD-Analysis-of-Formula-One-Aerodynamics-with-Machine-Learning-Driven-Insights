@@ -1,0 +1,50 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      controlDict;
+}
+application     simpleFoam;
+startFrom       startTime;
+startTime       0;
+stopAt          endTime;
+endTime         1000;
+deltaT          1;
+writeControl    timeStep;
+writeInterval   1;
+purgeWrite      0;
+writeFormat     ascii;
+writePrecision  6;
+writeCompression uncompressed;
+timeFormat      general;
+timePrecision   6;
+runTimeModifiable true;
+functions
+{
+    forces
+    {
+        type            forces;
+        libs            ("libforces.so");
+        writeControl    timeStep;
+        writeInterval   1;
+        patches         ("f1car");
+        rho             rhoInf;
+        rhoInf          1.225; // Air density
+        CofR            (0 0 0); // Center of rotation
+        log             true;
+    }
+probes
+    {
+        type            probes;
+        libs            ("libsampling.so");
+        writeControl    timeStep;
+        writeInterval   1;
+        fields          (p U);
+        probeLocations
+        (
+            (0 0 0) // Example point
+            (10 0 0)
+        );
+    }
+}

@@ -1,0 +1,3 @@
+
+paraview:44832 terminated with signal 11 at PC=60bca38dfd20 SP=7fffe27ba618.  Backtrace:
+[0x60bca38dfd20]
