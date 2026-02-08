@@ -188,3 +188,8 @@ Sulaiman Mahmood
 ## Research Summary
 A detailed CFD case study is available here:  
 [PDF – CFD Analysis of an F1-Style Vehicle Using OpenFOAM](docs/CFD%20Analysis%20of%20an%20F1-Style%20Vehicle%20Using%20OpenFOAM.pdf)
+
+
+## Publication
+This CFD case study is published on Zenodo and is citable via the following DOI:  
+https://doi.org/10.5281/zenodo.18521666
